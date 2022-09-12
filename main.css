@@ -1,0 +1,86 @@
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+.wedding-blue__text { color: #5b7993 !important; }
+.wedding-cream__text { color: #DCD4BE !important; }
+.wedding-gray__text { color: #646763 !important; }
+.wedding-forest-green__text { color: #384837 !important; }
+.wedding-gold__text { color: #ADA060 !important; }
+.wedding-cream { background-color: #DCD4BE !important; }
+.title {
+  font-family: 'Ms Madi', cursive; 
+  font-size: 84px;
+}
+.wedding-white { 
+  background-color: #fff !important; 
+  color: #384837 !important; 
+}
+.wedding-gold { 
+  background-color: #ADA060 !important; 
+}
+.wedding-parchment { 
+    background-color: #DCD4BE !important; 
+    color: #384837cc !important;
+}
+.wedding-blue { 
+    background-color: #5b7993 !important; 
+    color: #DCD4BE !important;
+}
+.wedding-forest-green { 
+    background-color: #384837 !important; 
+    color: #DCD4BE !important;
+}
+.wedding-forest-green__opaque { 
+    background-color: #384837cc !important; 
+    color: #DCD4BE !important;
+}
+.wedding-blue__opaque { 
+    background-color: #5b7993db !important; 
+    color: #DCD4BE !important;
+}
+.wedding-gold__opaque { 
+  background-color: #ADA060CF !important; 
+}
+.image-overlay {
+  position: absolute;
+  /* left: 50%; */
+  /* bottom: 0; */
+  /* transform: translate(-50%,0%); */
+  width: 100%;
+  height: 100%;
+  background-color: #00000091;
+}
+.margin-bottom-48 { margin-bottom: 48px; }
+.margin-bottom-64 { margin-bottom: 64px; }
+.main { 
+  margin: 0 auto;
+  max-width: 1080px;
+}
+.flowers {
+  display: block;
+  max-width: 400px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+body,h1,h2 {
+  font-family: 'Playfair Display', serif;
+}
+body, html {height: 100%}
+p {
+  font-family: "Poppins", sans-serif;
+  line-height: 2;
+  font-size: 18px;
+}
+.bgimg {
+  min-height: 100%;
+  background-position: top;
+  background-size: cover;
+}
+.bgimg { background-image: url("https://veronica-and-ryan.com/img/proposal.jpg"); }
+.slideshow {
+  border: solid 4px #fff;
+}
+.slideshow:hover {
+  border: solid 4px #5b7993;
+}
