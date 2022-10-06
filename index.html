@@ -18,10 +18,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="https://veronica-and-ryan.com/main.css">
+  <link rel="stylesheet" href="main.css">
+
+  
+  <!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 <body class="wedding-white w3-animate-opacity">
-
 
 <!-- Header / Home-->
 <header class="w3-display-container w3-wide bgimg" id="home">
@@ -32,6 +39,56 @@
     <h2><b>10.08.2022</b></h2>
   </div>
 </header>
+
+<!-- Modal HTML embedded directly into document -->
+<div id="itinerary" class="modal w3-center">
+  <img alt="" src="https://veronica-and-ryan.com/img/flower-border.png" class="flowers" />
+  <h1 class="w3-xxxlarge wedding-blue__text w3-center"><b>Itinerary</b></h1>
+  <hr />
+  <div class="w3-row">
+    <div class="w3-col m3">
+      <p>Arrival</p>
+    </div>
+    <div class="w3-col m9">
+      <p>Guests are invited to enjoy The Huntington Library gardens prior to the ceremony</p>
+      <p><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=The%20Huntington%20Library,%201800%20Orlando%20Rd,%20San%20Marino,%20CA%2091108">1800 Orlando Rd, San Marino, CA 91108</a></p>
+    </div>
+  </div>
+  <hr />
+  <div class="w3-row">
+    <div class="w3-col m3">
+      <p>5:45 P.M.</p>
+    </div>
+    <div class="w3-col m9">
+      <p>Shuttle pick-up at the Botanical Circle</p>
+    </div>
+  </div>
+  <hr />
+  <div class="w3-row">
+    <div class="w3-col m3">
+      <p>6:00 P.M.</p>
+    </div>
+    <div class="w3-col m9">
+      <p>Ceremony at The Chinese Pavilion, Penjing Garden</p>
+      <p>Champagne and hors d'oeuvres following the ceremony</p>
+      <p>Shuttle return to the Botanical Circle</p>
+    </div>
+  </div>
+  <hr />
+  <div class="w3-row">
+    <div class="w3-col m3">
+      <p>7:30 P.M.</p>
+    </div>
+    <div class="w3-col m9">
+      <p>Dinner at Gale's<br /><a href="https://www.google.com/maps/place/452+S+Fair+Oaks+Ave,+Pasadena,+CA+91105/@34.1378141,-118.1523058,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2c37b7a21ec3d:0x3a33be4d57e545b0!8m2!3d34.1378141!4d-118.1501171" target="_blank">452 S Fair Oaks Ave, Pasadena, CA 91105</a></p>
+    </div>
+  </div>
+  <hr />
+  <img alt="" src="https://veronica-and-ryan.com/img/flower-border.png" class="flowers" />
+</div>
+
+<!-- Link to open the modal -->
+<a class="floating-modal-btn w3-btn wedding-blue w3-border w3-border-white w3-padding-32" href="#itinerary" rel="modal:open">Open Itinerary</a>
 
 <br />
 
@@ -201,16 +258,15 @@
     <h1 class="w3-xxxlarge wedding-blue__text w3-center"><b>Event Information</b></h1>
     <div class="w3-row">
       <div class="w3-col m6">
-        <p><strong>The Huntington Library in The Chinese Garden</strong><br /><a target="_blank" href="https://www.google.com/maps/place/1151+Oxford+Rd,+San+Marino,+CA+91108/@34.1286148,-118.1140945,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2db4cd39ad5b1:0x279215f2c0b6d57!8m2!3d34.1286148!4d-118.1119058">1151 Oxford Rd, San Marino, CA 91108</a></p>
-        <p><strong>Saturday, October 8</strong><br />Guests should plan to arrive at 5:30 P.M.</p>
-<p>Cocktail Hour will be held at The Huntington Library after the ceremony and before the dinner reception.</p>
+        <p><strong>The Huntington Library in The Chinese Pavilion, Penjing Garden</strong><br /><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=The%20Huntington%20Library,%201800%20Orlando%20Rd,%20San%20Marino,%20CA%2091108">1800 Orlando Rd, San Marino, CA 91108</a></p>
+        <p><strong>Saturday, October 8</strong><br /> Guests are welcome to check in at the front desk to enjoy the gardens at the Huntington Library before the event. All attendees should prepare to board shuttles by 5:30 P.M. in the Botanical Circle near The Huntington Library entrance.</p>
+        <p>Cocktail Hour will be held at The Huntington Library after the ceremony and before the dinner reception.</p>
         <p><strong>Dinner Reception at Gale's Restaurant</strong><br>We invite you to attend a dinner reception after our Cocktail Hour to celebrate our union. All guests attending the dinner should plan to arrive at 7:30 P.M. at Gale's Restaurant. We look forward to sharing this with you.<br><a href="https://www.google.com/maps/place/452+S+Fair+Oaks+Ave,+Pasadena,+CA+91105/@34.1378141,-118.1523058,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2c37b7a21ec3d:0x3a33be4d57e545b0!8m2!3d34.1378141!4d-118.1501171" target="_blank">452 S Fair Oaks Ave, Pasadena, CA 91105</a></p>
       </div>
       <div class="w3-col m6">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.6757612366!2d-118.11671824836235!3d34.129049621029175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2db4d02615c73%3A0xb328d70c295f1904!2sThe%20Huntington%20Library%2C%20Art%20Museum%2C%20and%20Botanical%20Gardens!5e0!3m2!1sen!2sus!4v1662963168862!5m2!1sen!2sus" width="600" height="450" style="border:0; max-width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
-    <p class="w3-center">Brighton attendees note: After-wedding dinner location is to be determined.</p>
   </div>
 
   <img alt="" src="https://veronica-and-ryan.com/img/flower-border.png" class="flowers" />
@@ -219,7 +275,7 @@
   <div class="w3-center">
     <h1 class="w3-xxxlarge wedding-blue__text w3-center"><b>Registry</b></h1>
     <p>Your presence at our wedding is the greatest gift we could ask for! If you would like to honor us with a gift, a link to our registry is provided below.</p>
-  <a target="_blank" href="https://www.myregistry.com/giftlist/veronica-and-ryan" class="w3-btn wedding-green w3-border w3-border-blue">Veronica and Ryan's Wedding Registry</a>
+  <a target="_blank" href="https://www.myregistry.com/giftlist/veronica-and-ryan" class="w3-btn wedding-white w3-border w3-border-blue">Veronica and Ryan's Wedding Registry</a>
   <p>If the registry doesn't reflect a way that you would like to contribute, please consider supporting our honeymoon through Venmo.</p>
   <p>Venmo: <a href="https://venmo.com/code?user_id=2158542668693504026&amp;created=1663517237">@Veronica-and-Ryan</a></p>
   </div>
