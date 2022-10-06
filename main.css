@@ -92,9 +92,10 @@ p {
   position: fixed !important;
   top: 20px;
   right: 20px;
-  z-index: 2;
+  z-index: 1;
 }
 
 #itinerary {
+  z-index: 2;
   max-width: 700px;
 }
